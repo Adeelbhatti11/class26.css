@@ -1,0 +1,80 @@
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: both mandatory;
+}
+.content{
+    border: 3px solid black;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    display: block;
+    /* scroll-behavior: smooth; */
+    position: sticky;
+    top: 0px;
+
+}
+.content ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+.content ul a{
+    text-decoration: none;
+    align-items: center;
+}
+div.section{
+    scroll-snap-align: start;
+}
+#home{
+   
+    padding: 30px;
+    width: 96%;
+    height: calc(100vh-50px);
+    background-color: aqua;
+}
+#home input::file-selector-button:hover{
+    background-color: rgb(244, 146, 18);
+    color: aqua;
+    border: 1px dashed black;
+}
+#page{
+    
+    padding: 30px;
+    width: 96%;
+    height: calc(100vh-50px);
+    background-color: rgb(0, 255, 34);
+}
+#contact{
+    
+    padding: 30px;
+    width: 96%;
+    height:  calc(100vh-50px);
+    background-color: rgb(183, 0, 255);
+}
+:is(#home,#page,#contact) h1:hover{
+    font-size: large;
+    color: blue;
+    background: #eee;
+}
+#about{
+    display: flex;
+    background-image: url("./what_is_image_Processing.avif");
+    padding: 30px;
+    width: 96%;
+    height: calc(100vh);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+#about:focus-within{
+    background: #eee;
+}
+#about h1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+div.subclass{
+    backdrop-filter: contrast(150%)blur(10px);
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+}
